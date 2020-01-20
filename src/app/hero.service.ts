@@ -18,10 +18,13 @@ export class HeroService {
 
   constructor(
     private http: HttpClient,
-    private messageService: MessageService) { }
+    private messageService: MessageService) {
+      console.log('create HeroService');
+     }
 
   /** GET heroes from the server */
   getHeroes (): Observable<Hero[]> {
+    console.log('call getHeroes()');
     return this.http.get<Hero[]>(this.heroesUrl)
       .pipe(
         tap(heroes => this.log(`fetched heroes`)),
