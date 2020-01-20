@@ -1,11 +1,10 @@
-import { HeroService } from "./hero.service";
-import * as TypeMoq from "typemoq";
-import { HttpClient } from "@angular/common/http";
-import { HttpClientTestingModule, HttpTestingController } from "@angular/common/http/testing";
+import { HeroService } from './hero.service';
+import * as TypeMoq from 'typemoq';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { MessageService } from './message.service';
-import { Hero } from "./hero";
-import { TestBed, inject } from "@angular/core/testing";
-import { of } from "rxjs";
+import { Hero } from './hero';
+import { TestBed, inject } from '@angular/core/testing';
 
 describe('hero service', () => {
   let messageService: MessageService;
